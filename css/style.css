@@ -1,154 +1,301 @@
- 
-
  /* |applica un modello di layout naturale,ma consente di modificarne il contenuto */
-html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  *, *:before,
-   *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-    }
+ html {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+ *,
+ *:before,
+ *:after {
+     -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+     box-sizing: inherit;
+ }
 
 
-    /* font-family: 'Quicksand', sans-serif;
+ /* font-family: 'Quicksand', sans-serif;
     font-family: 'Montserrat', sans-serif; */
 
 
 
-body {
-    color: #000;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 0 1em;
-}
+ body {
+     color: #000;
+     font-family: 'Quicksand', sans-serif;
+     letter-spacing: 0 1em;
+ }
 
-p{
-    color: #666;
-    line-height: 1.5;
-    font-size: 1em;
-}
+ p {
+     color: #666;
+     line-height: 1.5;
+     font-size: 1em;
+ }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:'Montserrat', sans-serif;
-    text-transform: uppercase;
-}
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: 'Montserrat', sans-serif;
+     text-transform: uppercase;
+ }
 
-.primary-title {
-    background: url(../img/sfondo-titolo-code85.jpg) no-repeat;
-    background-size: cover;
-}
+ .primary-title {
+     background: url(../img/sfondo-titolo-code85.jpg) no-repeat;
+     background-size: cover;
+ }
 
-.primary-title h1{
-    text-align: center;
-    color: #fff;
-    padding:50px ;
-    font-size: 3em;
-}
+ .primary-title h1 {
+     text-align: center;
+     color: #fff;
+     padding: 50px;
+     font-size: 3em;
+ }
 
-.container {
-    width: 90%;
-    margin: 30px auto;
-}
+ .container {
+     width: 90%;
+     margin: 30px auto;
+ }
 
 
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 \     \     | ===================== navbar e logo======================| \  \ 
 \||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-.top {
-    display: flex;
-    margin: 20px 5%;
-    align-items: center;
-}
+ .top {
+     display: flex;
+     margin: 20px 5%;
+     align-items: center;
+ }
 
 
-.top img{
-    width: 20%;
-}
+ .top img {
+     width: 20%;
+ }
 
-.main-menu-list {
-    list-style:none;
-    display: flex;
-}
+ .main-menu-list {
+     list-style: none;
+     display: flex;
+ }
 
-.main-menu-list li{
-    margin: 0 10px;
-}
+ .main-menu-list li {
+     margin: 0 10px;
+ }
 
-.main-menu-list a{
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-    border-radius: 5px;
-    transition: all linear 0.2s;
-}
+ .main-menu-list a {
+     padding: 10px;
+     text-decoration: none;
+     color: #000;
+     border-radius: 5px;
+     transition: all linear 0.2s;
+ }
 
-.active {
-    border: 1px solid #340153;
-}
+ .active {
+     border: 1px solid #340153;
+ }
 
-.main-menu-list a:hover{
-    background-color: #340153;
-    color: #fff;
-}
+ .main-menu-list a:hover {
+     background-color: #340153;
+     color: #fff;
+ }
 
 
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 \     \     | ===================== sezione servizi======================| \  \ 
 \||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-.service-container{
-    display: flex;
-    flex-wrap: wrap;
-}
+ .service-container {
+     display: flex;
+     flex-wrap: wrap;
+ }
 
-.service {
-    display: flex;
-    align-items: flex-start;
-    width: 45%;
-    margin: 20px;
-}
+ .service {
+     display: flex;
+     align-items: flex-start;
+     width: 45%;
+     margin: 20px;
+ }
 
-.service-text h2{
-    margin-top: 0;
-}
+ .service-text h2 {
+     margin-top: 0;
+ }
 
-.service-text {
-    margin-left: 20px;
-}
+ .service-text {
+     margin-left: 20px;
+ }
 
 
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 \     \     | ===================== sezione secondaria======================| \  \ 
 \||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 
-.secondary-content, .secondary-content-reverse {
-    display: flex;
-    height: 70vh;
-}
+ .secondary-content,
+ .secondary-content-reverse {
+     display: flex;
+     height: 75vh;
+ }
 
-.secondary-img {
-    width: 50%;
-}
+ .secondary-img {
+     width: 50%;
+ }
 
-.secondary-background-01 {
-    background: url(../img/img-1.jpg);
-    background-size: cover; 
-    background-position: center;
+ .secondary-background-01 {
+     background: url(../img/img-1.jpg);
+     background-size: cover;
+     background-position: center;
 
-}
+ }
 
-.secondary-background-02 {
-    background: url(../img/img-2.jpg);
-    background-size: cover;
-    background-position: center ;
-}
+ .secondary-background-02 {
+     background: url(../img/img-2.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.secomdary-text {
-    width: 50%;
-}
+ .secondary-text {
+     width: 50%;
+     background-color: #719430;
+     color: white;
+     padding: 2em 3em;
+ }
 
+ .secondary-text p {
+     color: white;
+     line-height: 1.6;
+     margin-top: 2em;
+ }
+
+ .secondary-text h2 {
+     font-size: 2em;
+ }
+
+ .btn {
+     text-decoration: none;
+     background-color: white;
+     color: #719430;
+     text-transform: uppercase;
+     font-size: 1.5em;
+     padding: 0.5em 1em;
+     border-radius: 5px;
+     display: inline-block;
+     margin-top: 20px;
+     transition: all 200ms ease-in;
+     border: 1px solid white;
+ }
+
+ .btn:hover {
+     color: white;
+     background-color: #719430;
+ }
+ footer{
+     background-color: #000;
+     padding: 3em;
+     text-align: center;
+ }
+ footer p{
+     color: white;
+ }
+ footer p a{
+     color: #719430;;
+     text-decoration: none;
+     transition: all 200ms ease-in;
+ }
+ footer p a:hover{
+     color: white;
+ }
+
+ /* =================== media queries ============================= */
+ @media screen and (max-width: 1500px) {
+     .secondary-content, .secondary-content-reverse{
+         height: 80vh;
+     }
+     .top img{
+         width: 30%;
+     }
+ }
+ @media screen and (max-width: 1050px) {
+    .secondary-content, .secondary-content-reverse{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .secondary-img, .secondary-text{
+        width: 100%;
+    }
+    .secondary-img{
+        height: 350px;
+    }
+    .secondary-text{
+        order: 2;
+    }
+    .secondary-img{
+        order: 1;
+    }
+    .top img{
+        width: 50%;
+    }
+ }
+ @media screen and (max-width: 950px) {
+     .service{
+         /* flex-direction: column; */
+         justify-content: center;
+         align-items: flex-start;
+         width: 100%;
+         line-height: 1.5;
+         margin-top: 50px;
+     }
+     .service:first-of-type{
+         margin-top: 0;
+     }
+     .service-container{
+         display: block;
+         margin: 15px;
+         padding: 30px 0 100px 0;
+     }
+ }
+ @media screen and (max-width: 600px) {
+     .top img{
+         width: 90%;
+     }
+     .service{
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         margin-left: 0;
+     }
+     .secondary-text{
+         padding: 4%;
+     }
+     .container{
+         width: 100%;
+     }
+     .service-text{
+         margin: 0;
+         padding: 10px;
+     }
+ }
+ @media screen and (max-width: 500px) {
+     .top img{
+         display: none;
+     }
+     .top{
+        margin: 20px 0 0 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+     }
+     .container{
+         margin: 0;
+         padding: 0;
+     }
+     .main-menu-list{
+         padding: 0;
+     }
+     .main-menu-list li{
+         width: 25%;
+     }
+     nav{
+         width: 100%;
+     }
+ }
